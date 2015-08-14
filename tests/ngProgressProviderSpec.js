@@ -151,6 +151,17 @@ describe('How the provider should work', function () {
         expect(domElement.parentNode).toEqual(div);
     });
 
+    it('allow you to change the parent of the progressbar by an ID selector', function () {
+        var domElement = this.progressbar.getDomElement()[0];
+        expect(domElement.parentNode).toEqual(document.body);
+
+        var div = document.createElement('div');
+        div.id = 'container';
+        document.body.appendChild(div);
+        this.progressbar.setParent('container');
+        expect(domElement.parentNode).toEqual(div);
+    });
+
     it('throws exception when invalid parent is set', function () {
         var that = this;
         expect(function () {

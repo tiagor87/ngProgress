@@ -104,7 +104,11 @@ ngProgress.complete();
 * **setParent** - Changes the parent of the DOM element which visualizes the progress bar
 
 ```javascript
+// Change by HTML element
 ngProgress.setParent(document.getElementById('container'));
+
+// Change by ID
+ngProgress.setParent('container');
 ```
 
 * **getDomElement** - Gets the DOM element  which visizualizes the progress bar. It is wrapped as a jqlite element - https://docs.angularjs.org/api/ng/function/angular.element
