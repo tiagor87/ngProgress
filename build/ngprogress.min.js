@@ -1,5 +1,5 @@
 /*
-ngprogress 1.1.2 - slim, site-wide progressbar for AngularJS 
+ngprogress 1.1.3 - slim, site-wide progressbar for AngularJS 
 (C) 2013 - Victor Bjelkholm 
 License: MIT 
 Source: https://github.com/VictorBjelkholm/ngProgress 
